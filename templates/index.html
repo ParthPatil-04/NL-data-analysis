@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Natural Language Query</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ask a Data Question</h1>
+        <form method="POST">
+            <input type="text" name="nl_query" placeholder="e.g., average sales by category" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="result">{{ result|safe }}</div>
+    </div>
+</body>
+</html>
